@@ -1,7 +1,7 @@
 document.writeln("<html>");
 document.writeln("    <head>");
 document.writeln("        <meta charset=\'UTF-8\'>");
-document.writeln("        <link href=\'/HTML\/\/style1.css\' rel=\'stylesheet\'>");
+document.writeln("        <link href=\'style1.css\' rel=\'stylesheet\'>");
 document.writeln("        <link rel=\'icon\' href=\'/HTML\/\/Pic/logo.png\' type=\'image/x-icon\'/>");
 document.writeln("    </head>");
 document.writeln("    <body>");
