@@ -4,7 +4,7 @@ document.write('  <head>');
 document.write('    <link rel="icon" href="../Pic/logo.png" type="image/x-icon"/>');
 document.write('    <meta charset="UTF-8">');
 document.write('    <title>傷心小棧裏的信心花舍</title>');
-document.write('    <script type="text/javascript" src="../header.js"></script>');
+document.write('    <script type="text/javascript" src="LegianaPage/header.js"></script>');
 document.write('    <script type="text/javascript" src="BacktoTop.js"></script>');
 document.write('    <link href="Page.css" rel="stylesheet">');
 document.write('  </head>');
