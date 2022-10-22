@@ -1,0 +1,37 @@
+@import "compass/css3";
+@import url(https://fonts.googleapis.com/css?family=Noto+Serif+TC&amp;display=swap);
+
+.Title {
+    font-size: 20px;
+    padding: 180px 180px;
+    min-height: 35vh;
+    animation: slide-in01 1.5s backwards;
+    justify-content: center;
+}
+.Title .new{
+    position: relative;
+    border-left: hidden;
+    border-right: hidden;
+    padding: 1rem 1rem;
+}
+.Title .new a {
+    text-decoration: none;
+    color: #fff;
+    font-family: Microsoft JhengHei;
+    font-weight: bold;
+}
+.name_blank {
+    position: fixed;
+    box-sizing: border-box;
+    animation: slide-in02 1.5s backwards;
+    margin: 56px 233px;
+    z-index: 9999;
+}
+
+.name_blank .name {
+    color: #fff;
+}
+.name_blank .name h2 {
+    font-size: 2em;
+    font-family: Microsoft JhengHei;
+}

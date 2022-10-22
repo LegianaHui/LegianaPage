@@ -1,0 +1,60 @@
+.sec_about {
+  position: fixed;
+  width: 100%;
+  min-height: 100vh;
+  padding: 250px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;  
+}
+.content_about {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border: auto;
+}
+
+@font-face {
+  font-family: Pro_DB;
+  src: url("Pro_DB.otf") format("opentype");
+}
+
+.about {
+  font-size: 150px;
+  color: white;
+}
+
+.about span
+{
+  font-family: "Pro_DB";
+  display: inline-block;
+}
+
+.change-content::after{
+  content: '';
+  animation: changetext 8s linear;
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes changetext {
+  0% {
+    content: "你好";
+  }
+  20% {
+    content: "勇者";
+  }
+  45% {
+    content: "歡迎來臨風漂神社";
+  }
+  60% {
+    content: "請稍等...";
+  }
+  100% {
+    content: "即將進入陰間之路";
+  }
+}
