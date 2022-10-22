@@ -1,0 +1,257 @@
+@import "compass/css3";
+@import url(https://fonts.googleapis.com/css?family=Noto+Serif+TC&amp;display=swap);
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Serif TC', serif;
+  cursor: url('Pic/gam1340.ico') ,pointer;
+}
+body {
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll; 
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+a {
+    cursor: url('Pic/gam1338.ico') ,pointer;
+}
+.headerpage {
+    position: absolute;
+    width: auto;
+}
+header
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation: slide-in03 1s backwards;
+  background-color: rgba(142, 116, 255, 0.2);
+  z-index: 999;
+}
+header img.logo
+{
+    position: relative;
+    max-width: 100px;
+    cursor: url('Pic/gam1338.ico') ,pointer;
+}
+header ul
+{
+    position: relative;
+    display: flex;
+}
+header ul li
+{
+    list-style: none;
+}
+header ul li a
+{
+    display: inline-block;
+    color: #fff;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+    cursor: url('Pic/gam1338.ico') ,pointer;
+}
+section.sec2
+{
+  position: fixed;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to left,#8942a8, #0062be);
+  z-index: -1;
+}
+section.sec3
+{
+  position: fixed;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to left,#110118, rgb(65, 8, 1));
+  z-index: -1;
+}
+section.Index
+{
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+}
+.content
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+.content .textBox
+{
+    position: relative;
+    max-width: 600px;
+    animation: slide-in01 1.5s backwards;
+}
+.content .textBox h2
+{
+    color: #fff;
+    font-size: 3em;
+    line-height: 2em;
+    font-weight: 900;
+    text-transform: uppercase;
+} 
+.content .textBox h2 span
+{
+    font-size: 2.5em;
+}
+.content .textBox a
+{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: url('Pic/gam1338.ico') ,pointer;
+}
+.content .imgBox
+{
+    width: 600px;
+    padding-right: 50px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+.content .imgBox img
+{
+    min-width: 750px;
+    animation: slide-in02 1.5s backwards;
+}
+@keyframes slide-in01 {
+    from {
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+@keyframes slide-in02 {
+    from {
+        transform: translate3d(100%, 0, 0);
+    }
+}
+@keyframes slide-in03 {
+    from {
+        transform: translate3d(0, -100%, 0);
+    }
+}
+#Animation_Part
+
+.box-area
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.box-area li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 25px;
+    height: 25px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 20s linear infinite;
+}
+.box-area li:nth-child(1)
+{
+    left: 86%;
+    width: 80px;
+    height: 30px;
+    animation-delay: 1.5s;
+    animation-duration: 10s;
+}
+.box-area li:nth-child(2)
+{
+    left: 12%;
+    width: 30px;
+    height: 30px;
+    animation-delay: 1.5s;
+    animation-duration: 10s;
+}
+.box-area li:nth-child(3)
+{
+    left: 70%;
+    width: 100px;
+    height: 100px;
+    animation-delay: 5.5s;
+    animation-duration: 10s;
+}
+.box-area li:nth-child(4)
+{
+    left: 42%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 15s;
+}
+.box-area li:nth-child(5)
+{
+    left: 65%;
+    width: 40px;
+    height: 40px;
+    animation-delay: 0s;
+}
+.box-area li:nth-child(6)
+{
+    left: 15%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3.5s;
+}
+@keyframes animate {
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-800px) rotate(360deg);
+        opacity: 0;
+    }
+}
+#btt {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    padding: 15px;
+    background-color: transparent;
+    border-color: transparent;
+    cursor: url('Pic/gam1338.ico') ,pointer;
+}
+#btt .btt-img {
+    position: relative;
+    max-width: 50px;
+    cursor: url('Pic/gam1338.ico') ,pointer;
+}
