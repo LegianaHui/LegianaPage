@@ -8,7 +8,7 @@ document.writeln('            <a href=\'/LegianaPage/index.html\'><img src=\'/Le
 document.writeln('            <ul>');
 document.writeln('                <li><a href=\'/LegianaPage/index.html\'>首頁</a></li>');
 document.writeln('                <li><a href=\'/LegianaPage/Page/diary.html\'>日記</a></li>');
-document.writeln('                <li><a href=\'/LegianaPage/Page/Music.html\'>音樂推介</a></li>');
+document.writeln('                <li><a href=\'/LegianaPage/Page/Music.html\'>關於我</a></li>');
 document.writeln('            </ul>');
 document.writeln('        </header>');
 document.writeln('    </body>');
