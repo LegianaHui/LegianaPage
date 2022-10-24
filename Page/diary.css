@@ -29,7 +29,12 @@
 .card:nth-of-type(11) { order: -1;}
 .card:nth-of-type(12) { order: -2;}
 .card:nth-of-type(13) { order: -3;}
-.card:nth-of-type(14) { order: -1000;}
+.card:nth-of-type(14) { order: -4;}
+.card:nth-of-type(15) { order: -5;}
+.card:nth-of-type(16) { order: -6;}
+.card:nth-of-type(17) { order: -7;}
+.card:nth-of-type(18) { order: -8;}
+.card:nth-of-type(976) { order: -1000;}
 .banner-img {
     position: absolute;
     object-fit: cover;
