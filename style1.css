@@ -8,6 +8,8 @@
   box-sizing: border-box;
   font-family: 'Noto Serif TC', serif;
   cursor: url('Pic/gam1340.ico') ,pointer;
+  -webkit-user-drag: none;
+  user-select: none;
 }
 body {
     -ms-overflow-style: none; /* for Internet Explorer, Edge */
@@ -35,7 +37,6 @@ header
   justify-content: space-between;
   align-items: center;
   animation: slide-in03 1s backwards;
-  background-color: rgba(142, 116, 255, 0.2);
   z-index: 999;
 }
 header img.logo
