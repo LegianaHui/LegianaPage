@@ -5,6 +5,12 @@
     <title>J̵̒̑ư̵͐s̵͊̚t̵͋̀ ̴͆͛M̴̞͐o̸̡̽n̸̒̑i̴͌̓k̷̇̅a̸̋̿.̶̘̾</title>
     <link rel="icon" href="Pic/logo.png" type="image/x-icon"/>
     <link href='/LegianaPage/style1.css' rel='stylesheet'>
+    <script>
+      function darkmode() {
+        var element = document.getElementById("section1");
+        element.classList.toggle("dark")
+      }
+    </script>
   </head>
   <body>
  <!--Header-->
@@ -16,20 +22,7 @@
           <li><a href='/LegianaPage/Page/about.html'>關於我</a></li>
       </ul>
   </header>
-  <!--BG-->
-    <section class='sec2'>
-        <div class='animation-area'>
-            <ul class='box-area'>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </div>
-    </section>
-    <section class="Index">
+    <section class id="section1">
       <div class="content">
         <div class="textBox">
               <h2>歡迎閣下光臨信心花舍小店<br><span>風漂神社</span></h2>
@@ -38,6 +31,12 @@
         <div class="imgBox">
             <img src="Pic/indexbox.png" class="torii">
         </div>
+      </div>
+      
+      <div class="darkmode">
+        <button id="change-theme" class="btn" onclick="darkmode()">
+            <img class="img" src="/LegianaPage/Page/icon/light.svg" alt="">
+        </button>
       </div>
     </section>
   </body>
