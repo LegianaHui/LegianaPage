@@ -3,12 +3,98 @@
   <head>
     <link rel="icon" href="../Pic/logo.png" type="image/x-icon"/>
     <meta charset="UTF-8">
-    <title>陰間之路</title>
-    
-    <link href="about.css" rel="stylesheet">
-    <link href="Shrine.css" rel="stylesheet">
+    <title>神社案內所</title>
+    <link href='Shrine.css' rel='stylesheet'>
   </head>
   <body>
+    <header>
+      <a href='/LegianaPage/index.html'><img src='/LegianaPage/Pic/logo.png' class="logo" width="100" height="100"></a>
+      <h2>神社案內所</h2>
+    </header>
+    <div class="img-slider">
+      <!--1-->
+      <div class="slide">
+        <a href="/LegianaPage/index.html"><img src="/LegianaPage/Pic/index.png" alt=""></a>
+        <div class="info">
+          <a href="/LegianaPage/index.html"><h2>首頁</h2></a>
+        </div>
+      </div>
+      <!--1-->
+      <!--2-->
+      <div class="slide">
+        <a href="diary.html"><img src="/LegianaPage/Pic/diary.png" alt=""></a>
+        <div class="info">
+          <a href="diary.html"><h2>日記</h2></a>
+        </div>
+      </div>
+      <!--2-->
+      <!--3-->
+      <div class="slide">
+        <a href="about.html"><img src="/LegianaPage/Pic/about.png" alt=""></a>
+        <div class="info">
+          <a href="about.html"><h2>關於我</h2></a>
+        </div>
+      </div>
+      <!--3-->
+      <div class="navigation">
+        <div class="btn"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+      </div>
     </div>
+    <script type="text/javascript">
+      var slides = document.querySelectorAll('.slide');
+var btns = document.querySelectorAll('.btn');
+let currentSlide = 1;
+
+var manualNav = function(manual){
+  slides.forEach((slide) => {
+    slide.classList.remove('active');
+
+  btns.forEach((btn) => {
+    btn.classList.remove('active');
+    });
+  });
+
+    slides[manual].classList.add('active');
+    btns[manual].classList.add('active');
+}
+
+btns.forEach((btn, i) => {
+    btn.addEventListener("click", () => {
+      manualNav(i);
+      currentSlide = i;
+    });
+});
+
+var repeat = function(activeClass) {
+  let active = document.getElementsByClassName('active');
+  let i = 1;
+  
+  var repeater = () => {
+    setTimeout(function(){
+      [...active].forEach((activeSlide) => {
+        activeSlide.classList.remove('active');
+      })
+
+      slides[i].classList.add('active');
+      btns[i].classList.add('active');
+      i++;
+
+      if(slides.length == i){
+        i = 0;
+      }
+      if(i >= slides.length) {
+        return;
+      }
+      repeater();
+    }, 5000);
+  }
+  repeater();
+}
+repeat();
+    </script>
+
+
   </body>
 </html>

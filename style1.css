@@ -66,7 +66,7 @@ header ul li a {
   font-weight: 400;
   margin-left: 40px;
   text-decoration: none;
-  cursor: url("Pic/gam1338.ico"), pointer;
+  cursor: url("/LegianaPage/Pic/gam1338.ico"), pointer;
 }
 
 section {
@@ -150,7 +150,7 @@ section.Index {
   letter-spacing: 1px;
   text-decoration: none;
   text-transform: uppercase;
-  cursor: url("Pic/gam1338.ico"), pointer;
+  cursor: url("/LegianaPage/Pic/gam1338.ico"), pointer;
 }
 
 .content .imgBox {
